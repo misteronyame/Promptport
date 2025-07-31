@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PromptPort — Save & Organize Your AI Prompts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9InVybCgjZ3JhZGllbnQwKSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJncmFkaWVudDAiIHgxPSIwIiB5MT0iMCIgeDI9IjE5MiIgeTI9IjE5MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNjM2NmYxIi8+CjxzdG9wIG9mZnNldD0iMC41IiBzdG9wLWNvbG9yPSIjOGI1Y2Y2Ii8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2VjNDg5OSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+CjxwYXRoIGQ9Ik01NiA2NEg5NkE4IDggMCAwIDEgMTA0IDcyVjEyMEE4IDggMCAwIDEgOTYgMTI4SDU2QTggOCAwIDAgMSA0OCAxMjBWNzJBOCA4IDAgMCAxIDU2IDY0WiIgZmlsbD0id2hpdGUiLz4KPHA+YXRoIGQ9Ik0xMTIgNzJIMTUyQTggOCAwIDAgMSAxNjAgODBWMTI4QTggOCAwIDAgMSAxNTIgMTM2SDExMkE4IDggMCAwIDEgMTA0IDEyOFY4MEE4IDggMCAwIDEgMTEyIDcyWiIgZmlsbD0id2hpdGUiLz4KPHA+YXRoIGQ9Ik0zMiA0MEgxNTJBOCA4IDAgMCAxIDE2MCA0OFY1NkE4IDggMCAwIDEgMTUyIDY0SDMyQTggOCAwIDAgMSAyNCA1NlY0OEE4IDggMCAwIDEgMzIgNDBaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNMzIgMTQ0SDE1MkE4IDggMCAwIDEgMTYwIDE1MlYxNjBBOCA4IDAgMCAxIDE1MiAxNjhIMzJBOCA4IDAgMCAxIDI0IDE2MFYxNTJBOCA4IDAgMCAxIDMyIDE0NFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" sizes="192x192" />
+  <meta name="theme-color" content="#6366f1" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f7f9;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      padding: 3rem 1rem 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .cta {
+      margin: 2rem 0;
+    }
+    .cta a {
+      text-decoration: none;
+      background: #1abc9c;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #16a085;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .feature {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .feature h3 {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #999;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🚀 PromptPort</h1>
+    <p>Your offline-first AI prompt manager. Save, search, tag, and export your best ideas — all in one place.</p>
+    <div class="cta">
+      <a href="app.html">🧠 Launch App</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h3>💾 Save Prompts</h3>
+      <p>Store your favorite prompts with tags and timestamps.</p>
+    </div>
+    <div class="feature">
+      <h3>🔍 Search & Filter</h3>
+      <p>Quickly find prompts by keyword or tag — even offline.</p>
+    </div>
+    <div class="feature">
+      <h3>📤 Export to TXT</h3>
+      <p>Export all your prompts as plain text for backup or sharing.</p>
+    </div>
+    <div class="feature">
+      <h3>📥 Import Prompts</h3>
+      <p>Bring in saved prompts from other tools and formats.</p>
+    </div>
+    <div class="feature">
+      <h3>📱 Installable App</h3>
+      <p>Use it like a mobile or desktop app via PWA support.</p>
+    </div>
+    <div class="feature">
+      <h3>🔒 Offline-First</h3>
+      <p>Works completely offline — all data is stored locally.</p>
+    </div>
+  </section>
+
+  <footer>
+    Made with 💚 by Bernard Nyame Okumah — PromptPort v1.0
+  </footer>
+
+  <script>
+    // Simple analytics tracking
+    function trackEvent(eventName, data = {}) {
+      const event = {
+        timestamp: new Date().toISOString(),
+        event: eventName,
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        ...data
+      };
+      
+      // Store locally for now - you can later send to an analytics service
+      const events = JSON.parse(localStorage.getItem('analytics') || '[]');
+      events.push(event);
+      localStorage.setItem('analytics', JSON.stringify(events.slice(-100))); // Keep last 100 events
+    }
+
+    // Track page view
+    trackEvent('page_view', { page: 'landing' });
+    
+    // Track app launch
+    document.querySelector('.cta a').addEventListener('click', () => {
+      trackEvent('app_launch');
+    });
+  </script>
+
+</body>
+</html>
